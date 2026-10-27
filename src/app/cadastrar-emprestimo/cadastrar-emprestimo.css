@@ -1,0 +1,19 @@
+
+input {
+  display: block;
+  padding: 8px;
+  margin: 8px 0 15px;
+  width: 250px;
+}
+
+button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+}

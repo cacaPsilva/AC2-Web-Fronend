@@ -1,0 +1,22 @@
+
+<h1>Cadastrar Empréstimo</h1>
+
+<label>Nome da pessoa:</label>
+<input type="text" [(ngModel)]="nomePessoa">
+
+<label>Título do livro:</label>
+<input type="text" [(ngModel)]="tituloLivro">
+
+<label>Data prevista de devolução:</label>
+<input type="date" [(ngModel)]="dataPrevistaDevolucao">
+
+<button
+  [disabled]="!nomePessoa.trim() || !tituloLivro.trim() || !dataPrevistaDevolucao"
+  (click)="cadastrar()">
+  Cadastrar
+</button>
+
+<p>
+  <a routerLink="/lista">Ver empréstimos cadastrados</a>
+</p>
+
